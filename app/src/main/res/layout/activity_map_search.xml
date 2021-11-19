@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+MA42 Androidサンプル14 暗黙的インテント2
+画面レイアウトファイル
+
+ファイル名=activity_map_search.xml
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_keyword"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/etKeyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="searchButtonClick"
+        android:text="@string/bt_search"/>
+</LinearLayout>
